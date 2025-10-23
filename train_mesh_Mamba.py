@@ -193,8 +193,8 @@ if __name__ == '__main__':
         if SHUFFLE:
             np.random.shuffle(paths_dataset)
             np.savetxt("{}/path_{}.txt".format(file_path, exp_id), paths_dataset, fmt="%s", delimiter=",")
-        dataset_paths["train"] = paths_dataset[:int(len(paths_dataset) * 0.6)]
-        dataset_paths["test"] = paths_dataset[int(len(paths_dataset) * 0.4):]
+        dataset_paths["train"] = paths_dataset[:int(len(paths_dataset) * 0.8)]
+        dataset_paths["test"] = paths_dataset[int(len(paths_dataset) * 0.8):]
 
         # dataset
         data_set = {
